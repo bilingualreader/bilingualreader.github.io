@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>隐私政策 - 双语对照翻译 Bilingual Reader</title>
+<title>隐私政策 - Interliner 行间</title>
 <style>
   :root {
     --blue: #2563eb;
@@ -57,7 +57,7 @@
 
 <div class="hero">
   <h1>隐私政策</h1>
-  <p>双语对照翻译 Bilingual Reader · 生效日期:2026 年 7 月 24 日</p>
+  <p>Interliner 行间 · 双语对照翻译 · 生效日期:2026 年 7 月 24 日</p>
 </div>
 
 <div class="wrap">
@@ -68,6 +68,7 @@
       <li><b>网页文本</b>:当你开启翻译时,插件会把当前网页中需要翻译的可见文本段落发送到翻译服务器以获取译文。这是实现翻译功能所必需的唯一数据传输。</li>
       <li><b>本地设置</b>:翻译开关、翻译方向、悬浮球显示、激活状态等偏好仅保存在你浏览器本地,不会上传。</li>
       <li><b>匿名设备标识</b>:插件会在本地生成一个随机编号,仅用于统计免费额度用量,不关联任何个人身份。</li>
+      <li><b>译文缓存</b>:为了降低翻译成本、加快重复内容的显示速度,服务器会在<b>内存中短暂缓存</b>待翻译文本及其译文。缓存不与任何用户身份或设备编号关联,服务重启即全部清空,不会写入数据库或磁盘,也不会用于其他用途。</li>
     </ul>
 
     <h2>我们不收集什么</h2>
@@ -78,11 +79,12 @@
     </ul>
 
     <h2>第三方服务</h2>
-    <p>译文由<b>腾讯云机器翻译</b>生成,文本处理遵循腾讯的隐私政策(<a href="https://privacy.qq.com/" target="_blank">privacy.qq.com</a>)。翻译文本仅用于生成译文,本插件不做留存。</p>
+    <p>译文由<b>腾讯云机器翻译</b>生成,文本处理遵循腾讯的隐私政策(<a href="https://privacy.qq.com/" target="_blank">privacy.qq.com</a>)。翻译文本仅用于生成译文,除上述内存缓存外不做任何留存。</p>
 
     <h2>权限说明</h2>
     <ul>
-      <li><b>storage</b>:在你的浏览器本地保存偏好设置</li>
+      <li><b>storage</b>:在你的浏览器本地保存偏好设置,以及缓存已翻译过的文本</li>
+      <li><b>alarms</b>:定时唤醒翻译服务,避免长时间未使用后首次翻译要等待冷启动</li>
       <li><b>网站访问权限</b>:用于在网页中插入译文;文本仅发送至上述翻译服务</li>
     </ul>
 
@@ -96,7 +98,7 @@
   </div>
 </div>
 
-<div class="footer">双语对照翻译 Bilingual Reader</div>
+<div class="footer">Interliner 行间</div>
 
 </body>
 </html>
